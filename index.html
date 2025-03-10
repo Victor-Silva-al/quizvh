@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-card">
+            <header>
+                <h1 id="quiz">Quiz Game</h1>
+                <h3 id="title"></h3>
+            </header>
+
+            <div class="game-content" id="content-game">
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+                <div class="question-container">
+                    <h2 id="question"></h2>
+                </div>
+
+                <div class="answers-container" id="answers-id">
+                    <button class="answer" id="0"></button>
+                    <button class="answer" id="1"></button>
+                    <button class="answer" id="2"></button>
+                    <button class="answer" id="3"></button>
+                </div>
+
+                <div class="status-bar" id="status-id">
+                    <p>Score: <span id="score"></span></p>
+                    <p>High Score: <span id="high-score">0</span></p>
+                    <p>Time Left: <span id="time">90</span> seconds</p>
+                </div>
+            </div>
+            <button id="start" class="start-btn" onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
